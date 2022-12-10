@@ -1,0 +1,234 @@
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+.skill {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.skill .nav.nav-pills {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.skill .nav.nav-pills .nav-item {
+  width: 33.33333%;
+  height: 50%;
+}
+.skill .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.skill .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.skill .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.skill .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#skills-tabs-tab-blockchain {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100px 0 0 0;
+  font-size: 11px;
+  max-height: 50px;
+  padding-left: 20px;
+}
+.nav-link#skills-tabs-tab-languages {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  max-height: 50px;
+}
+.nav-link#skills-tabs-tab-data {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 100px 0 0;
+  font-size: 11px;
+  max-height: 50px;
+  padding-right: 10px;
+}
+.nav-link#skills-tabs-tab-backend {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 0 100px;
+  font-size: 11px;
+  max-height: 50px;
+  padding-left: 20px;
+}
+.nav-link#skills-tabs-tab-databases {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  max-height: 50px;
+}
+.nav-link#skills-tabs-tab-frontend {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 100px 0;
+  font-size: 11px;
+  max-height: 50px;
+  padding-right: 10px;
+}
+.skill-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.skill-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.skill-imgbx:hover::before {
+  height: 100%;
+}
+.skill-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.skill-imgbx:hover .skill-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.skill-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.skill-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+
+.blockchain-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.languages-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: -350px;
+  cursor: pointer;
+}
+
+.data-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: -350px;
+  cursor: pointer;
+}
+
+.backend-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.databases-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.frontend-panel {
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
