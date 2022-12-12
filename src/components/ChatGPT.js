@@ -7,7 +7,7 @@ const assistant = new Assistant({
 
 export const ChatGPT = () => {
   return (
-    <assistant
+    <Assistant
       appId="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"
       onReady={() => console.log('Assistant is ready!')}
       onMessage={message => console.log('Assistant says:', message)}
