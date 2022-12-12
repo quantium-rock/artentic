@@ -28,6 +28,7 @@ import colorSharp from "../assets/img/color-sharp.png";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
+import { ParticlesContainer } from "./Particles";
 // import TrackVisibility from "react-on-screen";
 
 import "./Skills.css";
@@ -56,6 +57,10 @@ export const Skills = () => {
   return (
     <>
       <section className="skill" id="skills">
+
+      {/* <ParticlesContainer className="particles" /> */}
+
+
         <Container>
           <Row>
             <Col size={12}>
@@ -96,22 +101,22 @@ export const Skills = () => {
                               <Carousel
                                 responsive={responsive}
                                 infinite={true}
-                                className="owl-carousel owl-theme skill-slider"
+                                className="owl-carousel owl-theme skill-slider carousel"
                               >
                                 <div className="item">
-                                  <img src={img8} alt="Solana" />
+                                  <img src={img8} alt="Solana" className="solana" />
                                   <h5>Solana</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={imgEOS} alt="EOSio" className="EOS" />
+                                  <img src={imgEOS} alt="EOSio" className="eos" />
                                   <h5>EOSio</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={imgPOL} alt="Polygon" />
+                                  <img src={imgPOL} alt="Polygon" className="polygon" />
                                   <h5>Polygon</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img0} alt="Ethereum" />
+                                  <img src={img0} alt="Ethereum" className="ethereum" />
                                   <h5>Ethereum</h5>
                                 </div>
                               </Carousel>
@@ -135,31 +140,31 @@ export const Skills = () => {
                                 className="owl-carousel owl-theme skill-slider"
                               >
                                 <div className="item">
-                                  <img src={img1} alt="Typescript" />
+                                  <img src={img1} alt="Typescript" className="typescript" />
                                   <h5>Typescript</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img2} alt="Javascript" />
+                                  <img src={img2} alt="Javascript" className="javascript" />
                                   <h5>Javascript</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img3} alt="Python" />
+                                  <img src={img3} alt="Python" className="python" />
                                   <h5>Pyhton</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img4} alt="Julia" />
+                                  <img src={img4} alt="Julia" className="julia" />
                                   <h5>Julia</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img5} alt="Rust" />
+                                  <img src={img5} alt="Rust" className="rust" />
                                   <h5>Rust</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img6} alt="C" />
+                                  <img src={img6} alt="C" className="c" />
                                   <h5>C</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={img7} alt="C++" />
+                                  <img src={img7} alt="C++" className="cpp" />
                                   <h5>C++</h5>
                                 </div>
                               </Carousel>

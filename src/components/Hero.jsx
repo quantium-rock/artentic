@@ -10,6 +10,7 @@ import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import avatar from './alex.glb';
 import './Hero.css';
+import backvid from '../assets/vids/universe2.mp4';
 
 export const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -56,46 +57,52 @@ export const Hero = () => {
   const gltf = useLoader(GLTFLoader, avatar)
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>
-                  {`👋 Hi! I'm Alex, `} 
-                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web3 Builder...", "Software Engineer...", "Data Scientist." ]'>
-                    <span className="wrap">{text}</span>
-                  </span>
-                </h1>
-                  <p>🌏 I’m a quantitative trader, an entrepreneur, and a workaholic with an open mind education.</p>
-                  <p>♟ A chess player, passionate about technology, machine learning, algorithmic trading, blockchain, web3 and quantum computing. With 10 years of professional experience trading global financial markets and more than 7 years in data science. </p>
-                  <button onClick={() => console.log('connect')}>Install Phantom to Connect with me<ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {/* {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>} */}
+    <>
+      {/* <ParticlesContainer className="particles" /> */}
+      <section className="banner" id="home">
+      <video autoPlay muted loop >
+        <source src={backvid} type="video/mp4" />
+      </video>
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`👋 Hi! I'm Alex, `} 
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web3 Builder...", "Software Engineer...", "Data Scientist." ]'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                    <p>🌏 I’m a quantitative trader, an entrepreneur, and a workaholic with an open mind education.</p>
+                    <p>♟ A chess player, passionate about technology, machine learning, algorithmic trading, blockchain, web3 and quantum computing. With 10 years of professional experience trading global financial markets and more than 7 years in data science. </p>
+                    <button onClick={() => console.log('connect')}>Install Phantom to Connect with me<ArrowRightCircle size={25} /></button>
+                </div>}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {/* {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    <img src={headerImg} alt="Header Img"/>
+                  </div>} */}
 
-                <Canvas className="canvas" camera={{ position: [0.05, 0.4, 1] }} shadows>
-                    <directionalLight position={[3.3, 1.0, 4.4]} castShadow={true} />
-                    <primitive object={gltf.scene} position={[0, -1.2, 0]} children-0-castShadow={true} />
-                    {/* <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow={true}>
-                      <meshStandardMaterial transparent={true} />
-                    </Circle> */}
-                    <OrbitControls target={[0, 0, 0]} />
-                
-                </Canvas>
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                  <Canvas className="canvas" camera={{ position: [0.05, 0.5, 1.2] }} shadows>
+                      <directionalLight position={[3.3, 1.0, 4.4]} castShadow={true} />
+                      <primitive object={gltf.scene} position={[0, -1.1, 0]} children-0-castShadow={true} />
+                      {/* <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow={true}>
+                        <meshStandardMaterial transparent={true} />
+                      </Circle> */}
+                      <OrbitControls target={[0, 0, 0]} />
+                  
+                  </Canvas>
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </>
   )
 }

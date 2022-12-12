@@ -1,7 +1,6 @@
-import React from 'react';
 import { ChatGPTAPI } from 'chatgpt'
 
-async function example() {
+export default async function example() {
   const api = new ChatGPTAPI({
     sessionToken: process.env.SESSION_TOKEN,
     clearanceToken: process.env.CLEARANCE_TOKEN,

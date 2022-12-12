@@ -6,7 +6,7 @@
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 0 50px 70px;
   margin-top: -60px;
 }
 .skill h2 {
@@ -238,6 +238,68 @@
   min-height: 120px;
 }
 
-.EOS {
-  height: 120px;
+.carousel {
+  min-width: 100%;
+}
+
+.eos {
+  height: 180px !important;
+  width: 190px !important;
+}
+
+.solana {
+  height: 175px !important;
+  width: auto !important;
+}
+
+.polygon {
+  height: 175px !important;
+  width: auto !important;
+}
+
+.ethereum {
+  height: 175px !important;
+  width: auto !important;
+}
+
+.typescript {
+  padding: 10px;
+  height: 175px !important;
+  width: auto !important;
+}
+
+.javascript {
+  padding: 10px;
+  height: 175px !important;
+  width: auto !important;
+}
+
+.python {
+  height: 177px !important;
+  width: auto !important;
+}
+
+.julia {
+  height: 177px !important;
+  width: auto !important;
+}
+
+.rust {
+  height: 177px !important;
+  width: auto !important;
+}
+
+.c {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.cpp {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.particles {
+  opacity: 80 !important;
+  z-index: 99 !important;
 }
