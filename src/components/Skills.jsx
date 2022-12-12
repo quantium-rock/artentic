@@ -15,6 +15,10 @@ import img10 from "../assets/img/Pytorch.png";
 import img11 from "../assets/img/Keras.png";
 import img12 from "../assets/img/Postgre.png";
 import img13 from "../assets/img/MongoDB.png";
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
+import astro from "../assets/img/header-img.svg";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -67,9 +71,7 @@ export const Skills = () => {
                     <Nav.Link eventKey="blockchain">Blockchain</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="languages">
-                      Programming Languages
-                    </Nav.Link>
+                    <Nav.Link eventKey="languages"> Programming Languages</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link eventKey="data">Data Science</Nav.Link>
@@ -101,7 +103,7 @@ export const Skills = () => {
                                   <h5>Solana</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={imgEOS} alt="EOSio" />
+                                  <img src={imgEOS} alt="EOSio" className="EOS" />
                                   <h5>EOSio</h5>
                                 </div>
                                 <div className="item">
@@ -319,6 +321,14 @@ export const Skills = () => {
                 )}
               </TrackVisibility> */}
             </Col>
+            <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={astro} alt="Astronaut"/>
+                </div>}
+            </TrackVisibility>
+          </Col>
           </Row>
         </Container>
         <img className="background-image-right" src={colorSharp2}></img>

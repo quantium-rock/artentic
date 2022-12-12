@@ -4,6 +4,12 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Stats, OrbitControls, Circle } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import { useLoader } from '@react-three/fiber'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import avatar from './alex.glb';
+import './Hero.css';
 
 export const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -47,6 +53,8 @@ export const Hero = () => {
     }
   }
 
+  const gltf = useLoader(GLTFLoader, avatar)
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -70,10 +78,20 @@ export const Hero = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {/* {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
-                </div>}
+                </div>} */}
+
+                <Canvas className="canvas" camera={{ position: [0.05, 0.4, 1] }} shadows>
+                    <directionalLight position={[3.3, 1.0, 4.4]} castShadow={true} />
+                    <primitive object={gltf.scene} position={[0, -1.2, 0]} children-0-castShadow={true} />
+                    {/* <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow={true}>
+                      <meshStandardMaterial transparent={true} />
+                    </Circle> */}
+                    <OrbitControls target={[0, 0, 0]} />
+                
+                </Canvas>
             </TrackVisibility>
           </Col>
         </Row>

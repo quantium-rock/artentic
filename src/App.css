@@ -81,6 +81,14 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.alex {
+  z-index: 99;
+  background-color: red;
+}
+
+
+
 /************ Navbar Css ************/
 .logo {
   width: 200px;
