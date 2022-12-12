@@ -15,6 +15,7 @@ import img10 from "../assets/img/Pytorch.png";
 import img11 from "../assets/img/Keras.png";
 import img12 from "../assets/img/Postgre.png";
 import img13 from "../assets/img/MongoDB.png";
+import pandas from "../assets/img/Pandas.png";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
@@ -186,23 +187,27 @@ export const Skills = () => {
                             className="owl-carousel owl-theme skill-slider"
                           >
                             <div className="item">
-                              <img src={img9} alt="Tensorflow" />
+                              <img src={img9} alt="Tensorflow" className="tensor" />
                               <h5>Tensorflow</h5>
                             </div>
                             <div className="item">
-                              <img src={img10} alt="Pytorch" />
+                              <img src={img10} alt="Pytorch" className="pytorch" />
                               <h5>Pytorch</h5>
                             </div>
                             <div className="item">
-                              <img src={img11} alt="Keras" />
+                              <img src={img11} alt="Keras" className="keras" />
                               <h5>Keras</h5>
                             </div>
                             <div className="item">
-                              <img src={img12} alt="PostgreSQL" />
+                              <img src={pandas} alt="Keras" className="pandas" />
+                              <h5>Pandas</h5>
+                            </div>
+                            <div className="item">
+                              <img src={img12} alt="PostgreSQL" className="postgre" />
                               <h5>PostgreSQL</h5>
                             </div>
                             <div className="item">
-                              <img src={img13} alt="MongoDB" />
+                              <img src={img13} alt="MongoDB" className="mongodb" />
                               <h5>MongoDB</h5>
                             </div>
                           </Carousel>

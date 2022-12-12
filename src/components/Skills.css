@@ -104,12 +104,14 @@
   font-size: 11px;
   max-height: 50px;
   padding-left: 20px;
+  cursor: pointer !important;
 }
 .nav-link#skills-tabs-tab-languages {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 11px;
   max-height: 50px;
+  cursor: pointer !important;
 }
 .nav-link#skills-tabs-tab-data {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -117,6 +119,7 @@
   font-size: 11px;
   max-height: 50px;
   padding-right: 10px;
+  cursor: pointer !important;
 }
 .nav-link#skills-tabs-tab-backend {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -124,12 +127,14 @@
   font-size: 11px;
   max-height: 50px;
   padding-left: 20px;
+  cursor: pointer !important;
 }
 .nav-link#skills-tabs-tab-databases {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 11px;
   max-height: 50px;
+  cursor: pointer !important;
 }
 .nav-link#skills-tabs-tab-frontend {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -137,6 +142,7 @@
   font-size: 11px;
   max-height: 50px;
   padding-right: 10px;
+  cursor: pointer !important;
 }
 .skill-imgbx {
   position: relative;
@@ -194,43 +200,43 @@
 .blockchain-panel {
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
-  cursor: pointer;
+  margin-top: 80px;
+  /* cursor: pointer; */
 }
 
 .languages-panel {
   align-items: center;
   justify-content: center;
-  margin-top: -350px;
-  cursor: pointer;
+  margin-top: -337px;
+  /* cursor: pointer; */
 }
 
 .data-panel {
   align-items: center;
   justify-content: center;
-  margin-top: -350px;
-  cursor: pointer;
+  margin-top: -337px;
+  /* cursor: pointer; */
 }
 
 .backend-panel {
   align-items: center;
   justify-content: center;
   margin-top: 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .databases-panel {
   align-items: center;
   justify-content: center;
   margin-top: 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .frontend-panel {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .item {
@@ -242,14 +248,14 @@
   min-width: 100%;
 }
 
-.eos {
-  height: 180px !important;
-  width: 190px !important;
-}
-
 .solana {
   height: 175px !important;
   width: auto !important;
+}
+
+.eos {
+height: 180px !important;
+  width: 190px !important;
 }
 
 .polygon {
@@ -258,7 +264,7 @@
 }
 
 .ethereum {
-  height: 175px !important;
+  height: 180px !important;
   width: auto !important;
 }
 
@@ -297,6 +303,33 @@
 .cpp {
   height: 180px !important;
   width: auto !important;
+}
+
+.tensor {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.pytorch {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.keras {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.postgre {
+  height: 180px !important;
+  width: auto !important;
+}
+
+.mongodb {
+  height: 180px !important;
+  width: auto !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .particles {
