@@ -11,6 +11,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import avatar from './alex.glb';
 import './Hero.css';
 import backvid from '../assets/vids/universe2.mp4';
+// import * as THREE from 'three';
 
 export const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
