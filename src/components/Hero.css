@@ -86,3 +86,11 @@ video {
   min-height: 888px !important;
   height: 888px !important;
 }
+
+h1 {
+  font-size: 55px !important;
+}
+
+p {
+  font-size: 22px !important;
+}
