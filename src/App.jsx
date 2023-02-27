@@ -2,8 +2,9 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBar } from './components/NavBar'
 import { Hero } from './components/Hero'
-import { Services } from './components/Services';
-import { Team } from './components/Team';
+import { About } from './components/About'
+import { Services } from './components/Services'
+import { Team } from './components/Team'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Hero />
+      <About />
       <Services />
       <Team />
       <Projects />

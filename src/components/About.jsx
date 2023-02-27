@@ -8,13 +8,13 @@ import { Stats, OrbitControls, Circle } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import avatar from '../assets/3d/space_boi.glb'
-import './Hero.css'
+// import avatar from '../assets/3d/space_boi.glb'
+import './About.css'
 import backvid from '../assets/vids/universe2.mp4'
-// import HeroImg from '../assets/img/images/misc/women-with-vr.png'
+import HeroImg from '../assets/img/images/misc/women-with-vr.png'
 // import * as THREE from 'three';
 
-export const Hero = () => {
+export const About = () => {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [text, setText] = useState('')
@@ -64,12 +64,10 @@ export const Hero = () => {
     }
   }
 
-  const gltf = useLoader(GLTFLoader, avatar)
-
   return (
     <>
       {/* <ParticlesContainer className="particles" /> */}
-      <section className="banner" id="home">
+      <section className="banner" id="about">
         <video autoPlay muted loop>
           <source src={backvid} type="video/mp4" />
         </video>
@@ -102,27 +100,12 @@ export const Hero = () => {
             </Col>
             <Col xs={12} md={6} xl={5}>
               <TrackVisibility>
-                {/* {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>} */}
-
-                <Canvas className="canvas" camera={{ position: [0.05, 0.5, 1.2] }} shadows>
-                  <directionalLight position={[3.3, 1.0, 4.4]} castShadow={true} />
-                  <primitive object={gltf.scene} position={[0, -1.1, 0]} children-0-castShadow={true} />
-                  {/* <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow={true}>
-                        <meshStandardMaterial transparent={true} />
-                      </Circle> */}
-                  <OrbitControls target={[0, 0, 0]} />
-                </Canvas>
-              </TrackVisibility>
-              {/* <TrackVisibility>
                 {({ isVisible }) => (
                   <div className={isVisible ? 'animate__animated animate__zoomIn' : ''}>
                     <img src={HeroImg} alt="Header Img" />
                   </div>
                 )}
-              </TrackVisibility> */}
+              </TrackVisibility>
             </Col>
           </Row>
         </Container>

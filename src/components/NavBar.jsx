@@ -35,7 +35,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#home">
             <img src={logo} alt="Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -44,10 +44,10 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
+                href="#about"
                 className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('home')}>
-                Home
+                About
               </Nav.Link>
               <Nav.Link
                 href="#services"
