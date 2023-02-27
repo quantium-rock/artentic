@@ -11,7 +11,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 // import avatar from '../assets/3d/space_boi.glb'
 import './About.css'
 import backvid from '../assets/vids/universe2.mp4'
-import HeroImg from '../assets/img/images/misc/women-with-vr.png'
+import HeroImg from '../assets/img/misc/women-with-vr.png'
 // import * as THREE from 'three';
 
 export const About = () => {

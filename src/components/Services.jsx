@@ -8,9 +8,8 @@ import { Stats, OrbitControls, Circle } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import avatar from './alex.glb'
 import './Services.css'
-import HeroImg from '../assets/img/images/hero.png'
+import HeroImg from '../assets/img/hero.png'
 // import * as THREE from 'three';
 
 export const Services = () => {
@@ -62,8 +61,6 @@ export const Services = () => {
       setIndex((prevIndex) => prevIndex + 1)
     }
   }
-
-  const gltf = useLoader(GLTFLoader, avatar)
 
   return (
     <>
