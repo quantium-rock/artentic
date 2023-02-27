@@ -1,78 +1,72 @@
 /* eslint-disable jsx-a11y/alt-text */
-import imgPOL from "../assets/img/Polygon.png";
-import imgEOS from "../assets/img/EOSio.png";
-import img0 from "../assets/img/Ethereum.png";
-import img1 from "../assets/img/Typescript.png";
-import img2 from "../assets/img/Javascript.png";
-import img3 from "../assets/img/Python.png";
-import img4 from "../assets/img/Julia.png";
-import img5 from "../assets/img/Rust.png";
-import img6 from "../assets/img/C.png";
-import img7 from "../assets/img/C++.png";
-import img8 from "../assets/img/Solana.png";
-import img9 from "../assets/img/Tensorflow.png";
-import img10 from "../assets/img/Pytorch.png";
-import img11 from "../assets/img/Keras.png";
-import img12 from "../assets/img/Postgre.png";
-import img13 from "../assets/img/MongoDB.png";
-import pandas from "../assets/img/Pandas.png";
-import TrackVisibility from 'react-on-screen';
-import 'animate.css';
-
-import astro from "../assets/img/header-img.svg";
-
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png";
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import "animate.css";
-import { ParticlesContainer } from "./Particles";
+import imgPOL from '../assets/img/Polygon.png'
+import imgEOS from '../assets/img/EOSio.png'
+import img0 from '../assets/img/Ethereum.png'
+import img1 from '../assets/img/Typescript.png'
+import img2 from '../assets/img/Javascript.png'
+import img3 from '../assets/img/Python.png'
+import img4 from '../assets/img/Julia.png'
+import img5 from '../assets/img/Rust.png'
+import img6 from '../assets/img/C.png'
+import img7 from '../assets/img/C++.png'
+import img8 from '../assets/img/Solana.png'
+import img9 from '../assets/img/Tensorflow.png'
+import img10 from '../assets/img/Pytorch.png'
+import img11 from '../assets/img/Keras.png'
+import img12 from '../assets/img/Postgre.png'
+import img13 from '../assets/img/MongoDB.png'
+import pandas from '../assets/img/Pandas.png'
+import TrackVisibility from 'react-on-screen'
+import 'animate.css'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
+import arrow1 from '../assets/img/arrow1.svg'
+import arrow2 from '../assets/img/arrow2.svg'
+import colorSharp from '../assets/img/color-sharp.png'
+import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
+import colorSharp2 from '../assets/img/color-sharp2.png'
+import 'animate.css'
+import { ParticlesContainer } from './Particles'
 // import TrackVisibility from "react-on-screen";
 
-import "./Skills.css";
+import './Skills.css'
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 5
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+      items: 1
+    }
+  }
 
   return (
     <>
       <section className="skill" id="skills">
-
-      {/* <ParticlesContainer className="particles" /> */}
-
+        {/* <ParticlesContainer className="particles" /> */}
 
         <Container>
           <Row>
-            <Col size={12}>
-              <h2>My Tech Stack</h2>
-              <p>Lorem book.</p>
+            <Col size={8}>
+              {/* <h2>My Tech Stack</h2>
+              <p>Lorem book.</p> */}
               <Tab.Container id="skills-tabs" defaultActiveKey="languages">
                 <Nav
                   variant="pills"
                   className="nav-pills mb-5 justify-content-center align-items-center"
-                  id="pills-tab"
-                >
+                  id="pills-tab">
                   <Nav.Item>
                     <Nav.Link eventKey="blockchain">Blockchain</Nav.Link>
                   </Nav.Item>
@@ -102,8 +96,7 @@ export const Skills = () => {
                               <Carousel
                                 responsive={responsive}
                                 infinite={true}
-                                className="owl-carousel owl-theme skill-slider carousel"
-                              >
+                                className="owl-carousel owl-theme skill-slider carousel">
                                 <div className="item">
                                   <img src={img8} alt="Solana" className="solana" />
                                   <h5>Solana</h5>
@@ -138,8 +131,7 @@ export const Skills = () => {
                               <Carousel
                                 responsive={responsive}
                                 infinite={true}
-                                className="owl-carousel owl-theme skill-slider"
-                              >
+                                className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                   <img src={img1} alt="Typescript" className="typescript" />
                                   <h5>Typescript</h5>
@@ -184,8 +176,7 @@ export const Skills = () => {
                           <Carousel
                             responsive={responsive}
                             infinite={true}
-                            className="owl-carousel owl-theme skill-slider"
-                          >
+                            className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                               <img src={img9} alt="Tensorflow" className="tensor" />
                               <h5>Tensorflow</h5>
@@ -224,8 +215,7 @@ export const Skills = () => {
                           <Carousel
                             responsive={responsive}
                             infinite={true}
-                            className="owl-carousel owl-theme skill-slider"
-                          >
+                            className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                               <img src={img9} alt="Tensorflow" />
                               <h5>Tensorflow</h5>
@@ -261,8 +251,7 @@ export const Skills = () => {
                           <Carousel
                             responsive={responsive}
                             infinite={true}
-                            className="owl-carousel owl-theme skill-slider"
-                          >
+                            className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                               <img src={img9} alt="Tensorflow" />
                               <h5>Tensorflow</h5>
@@ -297,8 +286,7 @@ export const Skills = () => {
                           <Carousel
                             responsive={responsive}
                             infinite={true}
-                            className="owl-carousel owl-theme skill-slider"
-                          >
+                            className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                               <img src={img9} alt="Tensorflow" />
                               <h5>Tensorflow</h5>
@@ -331,18 +319,9 @@ export const Skills = () => {
                 )}
               </TrackVisibility> */}
             </Col>
-            <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={astro} alt="Astronaut"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
           </Row>
         </Container>
-        <img className="background-image-right" src={colorSharp2}></img>
       </section>
     </>
-  );
-};
+  )
+}
