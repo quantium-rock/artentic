@@ -8,7 +8,7 @@ import { Stats, OrbitControls, Circle } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import avatar from '../assets/3d/sun.glb'
+import avatar from '../assets/3d/earth.glb'
 import './Hero.css'
 import backvid from '../assets/vids/universe2.mp4'
 // import HeroImg from '../assets/img/images/misc/women-with-vr.png'
@@ -81,9 +81,9 @@ export const Hero = () => {
                   <img src={headerImg} alt="Header Img"/>
                 </div>} */}
 
-              <Canvas className="canvas" camera={{ position: [0.05, 0.5, 1.2] }} shadows>
+              <Canvas className="canvas" camera={{ position: [5, 0, 1.2] }} shadows>
                 <directionalLight position={[3.3, 1.0, 4.4]} castShadow={true} />
-                <primitive object={gltf.scene} position={[0, -1.1, 0]} children-0-castShadow={true} />
+                <primitive object={gltf.scene} position={[3, 2, 0]} children-0-castShadow={true} />
                 {/* <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow={true}>
                         <meshStandardMaterial transparent={true} />
                       </Circle> */}

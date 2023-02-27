@@ -1,12 +1,10 @@
 /************ Hero Css ************/
 
 video {
-  /* position: absolute; */
+  position: fixed;
   top: 0 !important;
   opacity: 50% !important;
   overflow-x: hidden !important;
-  height: 1040px !important;
-  width: 100% !important;
   margin: 0 !important;
 }
 
